@@ -1,0 +1,114 @@
+.gallery{
+    display: flex;
+    overflow: hidden;
+}
+.gallery li img{
+    width: 300px;
+    height: 200px;
+}
+.gallery li{
+    flex: 0 0 auto;
+    margin: 10px;
+    animation: moveImages 5s infinite linear;
+}
+@keyframes moveImages{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+/* Estilos Generales */
+body{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0e130;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav{
+    background-color: #333;
+    overflow: hidden;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #ddd;
+    color: black;
+}
+section{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+aside{
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para Formularios */
+form{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #45a049;
+}
+/* Añade mas estilos personalizados aquí */
+
